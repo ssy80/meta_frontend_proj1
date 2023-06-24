@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Design by foolishdeveloper.com -->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto slideshow</title>
+    <!--Stylesheet-->
+    <style media="screen">
+      
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*background-color: #7aacff;*/
+    background-color: #ffffff;
+}
+
+.container{
+    width: 600px;
+    position: relative;
+    /*transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;*/
+    overflow: hidden;
+    /*border: 10px solid #ffffff;*/
+    /*border-radius: 25px;*/
+    /*box-shadow: 10px 25px 30px rgba(0,0,0,0.3);*/
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+   
+    animation: slide 40s infinite;
+}
+
+.with_text{
+    width: 600px;
+    
+    /*text-align: center;*/
+}
+
+span{
+    position:relative;
+    top:50px;
+    left:10px;
+    color: blue;
+    font-size:2em;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px 10px 5px 10px;
+    border-radius: 25px;
+
+}
+
+
+
+
+
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);       
+    }
+   15%{
+        /*transform: translateX(0);    */   
+    } 
+   /* 25%{
+        transform: translateX(0);
+    }*/
+    
+    34%{
+        transform: translateX(-100%);
+    }
+
+    49%
+    {
+
+    }
+
+   /* 50%{
+        transform: translateX(-100%);
+    }*/
+
+    67%{
+        transform: translateX(-200%);
+    }
+
+    72%{}
+
+   /* 75%{
+        transform: translateX(-200%);
+    }*/
+
+
+    100%{
+        /*transform: translateX(-300%);*/
+    }
+
+
+  /*  100%{
+        transform: translateX(-300%);
+    }*/
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <!--<img class="image1" width="500" src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg">
+            <img class="image2" width="500" src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg">
+            <img class="image3" width="500" src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg">
+            <img class="image4" width="500" src="https://cdn.wallpapersafari.com/24/98/dwMtqD.jpg"> -->
+            <!--<img class="image1" src="/images/landscape_cost.jpg">
+
+            <p class="text1">TEST</p>
+            <img class="image2" src="/images/free_consultation_1.jpg">
+            <p class="text1">Hello</p>
+            <img class="image3" src="/images/plants.jpg">
+            <img class="image4" src="/images/free_.jpg">-->
+
+            <div class="with_text">
+                <span>FREE Consultation !</span>
+                <img  src="/images/free_consultation_1.jpg">              
+            </div>
+
+            <div class="with_text">
+                <span>FREE Delivery !</span>
+                <img src="/images/free_delivery_01.jpg">
+               
+            </div>
+
+            <div class="with_text">
+                <span>FREE Pots with any purchase !</span>
+                <img src="/images/free_pots_01.jpg">
+                
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>
